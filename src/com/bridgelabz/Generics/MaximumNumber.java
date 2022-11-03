@@ -1,7 +1,18 @@
 package com.bridgelabz.Generics;
 
-public class MaximumNumber {
+public class MaximumNumber <T extends Comparable> {
+      T variable1;
+      T variable2;
+      T variable3;
+    public MaximumNumber(T variable1, T variable2, T variable3){
+        this.variable1 = variable1;
+        this.variable2 = variable2;
+        this.variable3 = variable3;
 
+    }
+   public void findMax(){
+        MaximumNumber.findMax(this.variable1, this.variable2, this.variable3);
+   }
     public static void main(String[] args) {
         System.out.println("Welcome to the Generics Problems");
         System.out.println("\n Test the Maximum Three Numbers ");
